@@ -1,2 +1,5 @@
 # AFPextended_Cookerz
 Project for an iOS (Swift) application for the Apple Formation Program version Extened at Simplon in February-March 2025. It was made in 2 weeks. It's not a finished application, but rather a functional model. In it, I was labeled as 'apprenant 98'.
+
+Cookerz is an interactive app designed to enhance the joy of cooking at all skill levels. Whether you’re looking for simplicity or want to challenge yourself, our app allows you to easily find recipes based on a variety of criteria. For those who crave something new, you can dive into cooking challenges and earn coupons for your favorite boutiques or even books to expand your culinary knowledge.
+You can also share your own recipes or post pictures of your latest meals for others to admire. If you're ready to take your cooking skills further, you can join live sessions to learn new techniques alongside other users in real-time. And when you feel confident enough to take the next step, you can host your very own live cooking session.
