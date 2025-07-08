@@ -1,5 +1,5 @@
 //
-//  IngredientType.swift
+//  IngredientUnit.swift
 //  Cookerz
 //
 //  Created by Carine ESPEJO on 05/03/2025.
