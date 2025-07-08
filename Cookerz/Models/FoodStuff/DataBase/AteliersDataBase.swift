@@ -12,7 +12,12 @@ import Foundation
 
 // Extensions let add new functionality (ex: methods here) to an existing type without subclassing.
 extension Date {
-    // Create a Date from a string with a specified format (default is "yyyy-MM-dd")
+    // Create a Date from a string with a specified format, the default is "yyyy-MM-dd" if there is no date string entered
+    //Defines a static method from on Date. Being static means you call it on the Date type itself, not on an instance.
+    //Takes two parameters:
+    //string: a String representing a date.
+    //format: a String specifying the expected format of the date string, with a default value "yyyy-MM-dd".
+    //Returns an optional Date? because the conversion might fail if the string doesn't match the format.
     static func from(string: String, format: String = "yyyy-MM-dd") -> Date? {
         let formatter = DateFormatter()
         formatter.dateFormat = format
