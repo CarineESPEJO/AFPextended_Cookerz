@@ -2,13 +2,13 @@
 //  FontExtensions.swift
 //  Cookerz
 //
-//  Created by apprenant98 on 07/03/2025.
+//  Created by Carine ESPEJO on 07/03/2025.
 //
 
-
+//creation of custom fonts
 import SwiftUI
 
-// création de constantes pour changer facilement le size autant en Regular, Medium et Light
+// creation of constants to easily change the size at the same time in Regular, Medium and Light versions.
 let title3Size : CGFloat = 20
 let headlineSize : CGFloat = 17
 let bodySize : CGFloat = 17
@@ -19,13 +19,9 @@ let caption1Size : CGFloat = 12
 let caption2Size : CGFloat = 11
 let caption3Size : CGFloat = 10
 
-// création de .font spéciaux selon nos fonts
 extension Font {
-
-    
     // Regular
     
-    // func (comme ex .LargeTitle retournant la font et la taille)
     static func PoppinsTitle3() -> Font {
         return .custom("Poppins-Regular", size: title3Size)
     }
