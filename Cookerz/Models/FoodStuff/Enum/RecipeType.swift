@@ -1,12 +1,13 @@
 //
-//  IngredientType.swift
+//  RecipeType.swift
 //  Cookerz
 //
-//  Created by apprenant98 on 05/03/2025.
+//  Created by Carine ESPEJO on 05/03/2025.
 //
 
 import Foundation
 
+// this enum is to group recipe into categories (a recipe can be in multiple categories) to help the user to choose easily in the criteria when searching recipes
 enum RecipeType : CaseIterable {
     case asian
     case italian
