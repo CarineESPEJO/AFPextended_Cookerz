@@ -2,9 +2,12 @@
 //  AteliersDataBase.swift
 //  Cookerz
 //
-//  Created by apprenant98 on 09/03/2025.
+//  Created by Carine ESPEJO on 09/03/2025.
+// extension made by Carine ESPEJO
+// database made by other members of the group
 //
 
+//i make this extension to transform our own made dates four our ownmade database to transform them from string to real Dates
 import Foundation
 
 extension Date {
@@ -33,6 +36,8 @@ extension Date {
         return formatter.string(from: self)
     }
 }
+
+// I didn't make this database
 
 var ateliers: [Atelier] = [
     Atelier(
