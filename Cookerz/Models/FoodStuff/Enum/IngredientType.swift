@@ -2,11 +2,13 @@
 //  IngredientType.swift
 //  Cookerz
 //
-//  Created by apprenant98 on 05/03/2025.
+//  Created by Carine ESPEJO on 05/03/2025.
 //
 
 import Foundation
 
+// this enum is to group ingredient of the same type and so choose easily in the criteria when searching recipes
+// we wanted to use an API (we didn't have time unfortunatly) but the ingredient were'nt each time categorized so needed to create our own categories
 enum IngredientType : CaseIterable {
     case fruit
     case vegetable
