@@ -2,11 +2,12 @@
 //  IngredientType.swift
 //  Cookerz
 //
-//  Created by apprenant98 on 05/03/2025.
+//  Created by Carine ESPEJO on 05/03/2025.
 //
 
 import Foundation
 
+// an enum to choose de Unit to use when we create a recipe and so to show on recipes pages
 enum IngredientUnit :  CaseIterable {
     case piece
     case leaf
