@@ -2,7 +2,7 @@
 //  Ingredient.swift
 //  Cookerz
 //
-//  Created by apprenant98 on 07/03/2025.
+//  Created by Carine ESPEJO on 07/03/2025.
 //
 
 import Foundation
