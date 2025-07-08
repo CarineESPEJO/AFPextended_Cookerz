@@ -2,11 +2,13 @@
 //  Level.swift
 //  Cookerz
 //
-//  Created by apprenant98 on 05/03/2025.
+//  Created by Carine ESPEJO on 05/03/2025.
 //
 
 import Foundation
 
+// We chose to categorize the recipes into three difficulty levels.
+//To manage this cleanly and efficiently, we used an enum to associate each level with its corresponding visual elements, allowing for easier reuse throughout the app.
 enum Level {
     case defaultdifficulty
     case easy
