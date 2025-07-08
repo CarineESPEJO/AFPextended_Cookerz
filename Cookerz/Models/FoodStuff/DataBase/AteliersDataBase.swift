@@ -10,6 +10,7 @@
 //i make this extension to transform our own made dates four our ownmade database to transform them from string to real Dates
 import Foundation
 
+// Extensions let add new functionality (ex: methods here) to an existing type without subclassing.
 extension Date {
     // Create a Date from a string with a specified format (default is "yyyy-MM-dd")
     static func from(string: String, format: String = "yyyy-MM-dd") -> Date? {
