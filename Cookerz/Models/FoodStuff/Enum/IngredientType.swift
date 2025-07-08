@@ -7,7 +7,7 @@
 
 import Foundation
 
-// this enum is to group ingredient of the same type and so choose easily in the criteria when searching recipes
+// this enum is to group ingredient of the same type and so the user can choose easily in the criteria when searching recipes
 // we wanted to use an API (we didn't have time unfortunatly) but the ingredient were'nt each time categorized so needed to create our own categories
 enum IngredientType : CaseIterable {
     case fruit
