@@ -12,7 +12,8 @@ struct Ingredient : Identifiable, Hashable{
     var name : String
     // Enum
     var type : IngredientType
-    // null (?) exist for the wheel to choose ingredient when we add ingredient when we create recipe or workshop before we can 
+    // We need the the null (?) on this 2 variables because, when an ingredient is added to a recipe or workshop, 
+    //it's present for when we use the wheel to select an ingredient before adding the quantity and unit.
     var quantity : Double?
     var unit : IngredientUnit?
 }
