@@ -7,6 +7,8 @@
 
 import Foundation
 
+// this enum is to group ustensil of the same type and so the user can choose easily in the criteria when searching recipes
+// we wanted to use an API (we didn't have time unfortunatly) but the ustensil were'nt categorized so we needed to create our own categories
 enum UstensilType: CaseIterable {
     case knife
     case cookerMachine
