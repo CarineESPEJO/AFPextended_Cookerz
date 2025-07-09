@@ -5,6 +5,8 @@
 //  Created by apprenant98 on 09/03/2025.
 //
 
+// It was all the ingredients needed to call the API we wanted in the form we wanted 
+//( for most the ingredients on the recipe were lacking some infos likes their type)
 var recipe0Ingredients : [Ingredient] = [
     Ingredient (name: "joue de boeuf", type: .meat, quantity: 1, unit: .kilogramme),
     Ingredient (name: "huile d'olive", type: .oil, quantity: 2, unit: .bigSpoon),
