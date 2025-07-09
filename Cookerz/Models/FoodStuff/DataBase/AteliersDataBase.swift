@@ -7,26 +7,30 @@
 // database made by other members of the group
 //
 
-//i make this extension to transform our own made dates four our ownmade database to transform them from string to real Dates
+//i make this extension to transform our own made dates four our ownmade database to transform them from string to real Dates and Dates to Strings in the form we want
+//As it was much higher than my competence, I had lot of help from my teachers and internet
 import Foundation
 
 // Extensions let add new functionality (ex: methods here) to an existing type without subclassing.
 extension Date {
-    // Create a Date from a string with a specified format, the default is "yyyy-MM-dd" if there is no date string entered
-    //Defines a static method from on Date. Being static means you call it on the Date type itself, not on an instance.
-    //Takes two parameters:
-    //string: a String representing a date.
-    //format: a String specifying the expected format of the date string, with a default value "yyyy-MM-dd".
-    //Returns an optional Date? because the conversion might fail if the string doesn't match the format.
+    // Create a Date from a string with a specified format, "yyyy-MM-dd is default format
+    //Returns an optional Date because a conversion can't be if there is no date
     static func from(string: String, format: String = "yyyy-MM-dd") -> Date? {
+        // create instance of DateFormatter which is a class to convert between Date and string
         let formatter = DateFormatter()
+        // Sets the formatter's dateFormat property to the provided format string, so it knows how to interpret the input string.
         formatter.dateFormat = format
+        //Try to create a Date from the string using the formatter. Returns the Date if successful, or nil if the string doesn't match the format.
         return formatter.date(from: string)
     }
 
     // Convert Date to String with optional time formatting
+    // Here we say if its include time or not and give also the language of the string because
     func toString(format: String = "EEEE, d MMM yyyy", includeTime: Bool = false, locale: String = "fr_FR") -> String {
+        // create instance of DateFormatter
         let formatter = DateFormatter()
+        //Sets the locale of the formatter
+        //it's about how month names, day names, and other locale-specific elements are displayed (ex:"lundi" in French)
         formatter.locale = Locale(identifier: locale)
 
         // Base format without time
@@ -39,6 +43,7 @@ extension Date {
 
         // Set the date format
         formatter.dateFormat = finalFormat
+         //Try to create a string  from the Date using the formatter.
         return formatter.string(from: self)
     }
 }
