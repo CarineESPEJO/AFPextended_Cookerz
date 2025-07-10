@@ -2,7 +2,7 @@
 //  RecipesDataBase.swift
 //  Cookerz
 //
-//  Created by apprenant98 on 09/03/2025.
+//  Created by apprenant?? on 09/03/2025.
 //
 
 var recipes = [risottoChampignons, quicheEpinards, curryVegetarien, chiliSinCarneVegan, falafelsVeganMaison, pancakesVeganBanane, smoothieBowlSansLactose, cakeSansLactoseAuxAmandes, saladeCesarSansLactose, padThaiFacile, gyozasMaison, soupePhoVietnamienne, pizzaMargherita, spaghettiCarbonara, tiramisuClassique, lasagnesLesVraies, crepesBretonnes]
