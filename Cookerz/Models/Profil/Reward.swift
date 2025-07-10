@@ -2,7 +2,7 @@
 //  Reward.swift
 //  Cookerz
 //
-//  Created by apprenant98 on 05/03/2025.
+//  Created by Carine ESPEJO on 05/03/2025.
 //
 
 import Foundation
@@ -14,6 +14,8 @@ struct Reward: Identifiable {
     var icon : String
     var description : String
     var points : Int
+    // its null because when its a template, there is no code 
+    //and, in a functionnal app, one would be created at the moment the user choose this reward
     var code : String?
 }
 
