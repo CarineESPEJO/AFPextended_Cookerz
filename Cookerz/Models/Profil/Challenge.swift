@@ -6,7 +6,8 @@
 //
 
 import Foundation
-
+//Much later than when the database was established,
+//one of the learners made their code work by adding Hashable here
 struct Challenge : Identifiable, Hashable {
     var id  : UUID = UUID()
     var name : String
