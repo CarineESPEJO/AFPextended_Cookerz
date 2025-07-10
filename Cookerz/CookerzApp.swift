@@ -2,7 +2,7 @@
 //  CookerzApp.swift
 //  Cookerz
 //
-//  Created by apprenant98 on 05/03/2025.
+//  Created by Carine ESPEJO on 05/03/2025.
 //
 
 import SwiftUI
@@ -13,6 +13,7 @@ struct CookerzApp: App {
     
     var body: some Scene {
         WindowGroup {
+            // changed to link the opening of the app to TabBarView
             TabBarView()
                 .environmentObject(baseViewModel)
         }
