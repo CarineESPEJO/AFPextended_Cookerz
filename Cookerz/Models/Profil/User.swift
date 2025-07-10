@@ -2,16 +2,15 @@
 //  User.swift
 //  Cookerz
 //
-//  Created by apprenant98 on 05/03/2025.
+//  Created by Carine ESPEJO on 05/03/2025.
 //
-
-// à voir si on supprime liste de recipes
 
 import Foundation
 
 struct User : Identifiable{
     var id  : UUID = UUID()
     var name : String
+    // it's as a little catch phrase (ex : Chistopher "the spices lover")
     var titleName : String
     var image : String
     
@@ -23,25 +22,21 @@ struct User : Identifiable{
     
     // Followers
     var listFollowersId : [UUID]
-    
+    // We didn't know if we will need this code later, so we lel it here as comment
 //    var listFollowersCount: Int {
 //        listFollowersId.count
 //    }
     
     // Followed
     var listFollowedId : [UUID]
-    
+    //Same
 //    var listFollowedCount: Int {
 //        listFollowedId.count
 //    }
     
-    // Challenges
     var listChallenges : [Challenge]
-    
-    // Rewards
-    var rewardsUsed : [Reward]
 
-//     Current points
+    var rewardsUsed : [Reward]
     
 
 }
