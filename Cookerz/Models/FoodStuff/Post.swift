@@ -15,8 +15,9 @@ struct Post : Identifiable{
     var image : String
     var date : Date
     var level : Level
+    //as an early app POC, we didn't have time to do a real counter of likes
     var likes : Int
-    //Same
+    //There is null (?) because, here also, we aren't obliged to give one 
     var durationHours : Int?
     var durationMinutes : Int?
     
