@@ -7,7 +7,7 @@
 
 import Foundation
 
-// model for r=the recipes
+// model for the recipes
 struct Recipe : Identifiable{
     var id  : UUID = UUID()
     //id of the user who created the recipe
