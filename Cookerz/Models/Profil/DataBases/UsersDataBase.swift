@@ -2,7 +2,7 @@
 //  UsersDataBase.swift
 //  Cookerz
 //
-//  Created by apprenant98 on 07/03/2025.
+//  Created by apprenant?? on 07/03/2025.
 //
 
 var joseph = User(name: "Joseph", titleName: "Papa pressé comme un citron", image: "Joseph", listRecipes: [], listFollowersId: [paul.id, anna.id], listFollowedId: [lea.id, kazi.id, john.id], listChallenges: [challenge1,challenge3, challenge14, challenge18], rewardsUsed: [])
