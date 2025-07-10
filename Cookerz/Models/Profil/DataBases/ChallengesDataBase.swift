@@ -2,7 +2,7 @@
 //  ChallengesDataBase.swift
 //  Cookerz
 //
-//  Created by apprenant98 on 09/03/2025.
+//  Created by apprenant?? on 09/03/2025.
 //
 
 var challenge0 = Challenge(name: "Cuisiner en 20 minutes", icon: "timer", level: .easy, description: "Préparer un plat dans le temps record imparti : 20 minutes pour se surprendre !", points: 150, challengeStatus: .isNotStarted)
