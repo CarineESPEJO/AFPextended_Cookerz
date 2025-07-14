@@ -76,7 +76,7 @@ struct RecipePageTransparentFrontBGImage: View {
 
 // customed return button
 struct PageNCreationReturnedButton: View {
-    //access the presentation mode of the current view.(ex : to dismiss a modal or navigating back)
+    //access the presentation mode of the current view(here used to dismiss from the nav and go back)
     @Environment(\.presentationMode) var presentationMode
     var body: some View {
         Button {
