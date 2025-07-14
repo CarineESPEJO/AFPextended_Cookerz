@@ -2,7 +2,7 @@
 //  AtelierEnum.swift
 //  Cookerz
 //
-//  Created by apprenant98 on 13/03/2025.
+//  Created by apprenant?? on 13/03/2025.
 //
 
 enum AtelierEnum {
