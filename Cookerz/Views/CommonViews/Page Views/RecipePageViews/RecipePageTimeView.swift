@@ -2,12 +2,13 @@
 //  RecipePageTimeView.swift
 //  Cookerz
 //
-//  Created by apprenant98 on 13/03/2025.
+//  Created by Carine ESPEJO on 13/03/2025.
 //
 
 import SwiftUI
 
 struct RecipePageTimeView : View {
+    // call the recipe to retrieve its duration
     var recipe : Recipe
     var body: some View {
         VStack {
@@ -15,6 +16,7 @@ struct RecipePageTimeView : View {
                 .resizable()
                 .frame(width: 20, height: 20)
                 .padding(2)
+            // change the way to show the duration wether its more a less than a hour
             if recipe.durationHours == 0 {
                 Text("\(recipe.durationMinutes) min")
             } else {
