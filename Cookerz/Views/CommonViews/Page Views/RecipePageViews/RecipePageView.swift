@@ -24,8 +24,8 @@ struct RecipePageView: View {
     // var to change number of portions (
     @State var selectedPart: RecipeEnum = .ingredients
     // var to change number of portions 
-    // (we didn't have time to change, but if I can sometime, 
-    // the number PortionChosen may be better to be started on the number portion chosen by the creator of the recipe)
+    // (the number PortionChosen is initialized with 1 to make it work 
+    // but when the page appears it takes the number Portion chosen by the creator)
     @State var numberPortionChosen: Int = 1
     
     var body: some View {
@@ -41,11 +41,12 @@ struct RecipePageView: View {
                     BackgroungImage(imageName: recipe.image)
                     
                     VStack(alignment: .leading, spacing: 10) {
-                        // function to let a space at the top before the rest to see the recipe image behind
+                        // to let a space at the top before the rest to see the recipe image behind
                         RecipePageTransparentFrontBGImage(recipe: recipe)
                         
                         
                         VStack {
+                            // infos of the creator
                             PageHeaderView(elementTitle: recipe.title, recipeCreator: recipeCreator)
                             VStack (spacing : 8) {
                                 HStack(spacing: 8) {
@@ -79,9 +80,10 @@ struct RecipePageView: View {
 
                         
         }
+        // backbutton is hiddn because there is another one customed
         .navigationBarBackButtonHidden(true)
         .ignoresSafeArea()
-
+        // when page appear, numberPortionChosen takes portion chosen by creator as base
         .onAppear {
             numberPortionChosen = recipe.portion
         }
