@@ -1,13 +1,22 @@
+//
+//  RecipePageListSteps.swift
+//  Cookerz
+//
+//  Created by Carine ESPEJO on 13/03/2025.
+//
+
 import SwiftUI
 
 struct RecipePageListSteps: View {
+    //does'nt call recipe, just its steps list
     var listSteps: [String]
     
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
+            // for each steps
             ForEach(listSteps.indices, id: \.self) { index in
                 HStack(alignment: .top) {
-                    // Step Number (1, 2, 3, ...)
+                    // put the index +1 because index began with 0
                     Text("\(index + 1)")
                         .font(.headline)
                         .foregroundColor(.white)
@@ -16,7 +25,7 @@ struct RecipePageListSteps: View {
                         .cornerRadius(100)
                         .padding(.trailing, 8)
                     
-                    // Step Description
+                    // Show the value(string) of the step
                     Text("\(listSteps[index])")
                         .font(.PoppinsSubhead())
                         .lineLimit(nil)
