@@ -1,5 +1,5 @@
 //
-//  PageTransparentFrontBGImage.swift
+//  RecipePageTransparentFrontBGImage.swift
 //  Cookerz
 //
 //  Created by Carine ESPEJO on 14/03/2025.
