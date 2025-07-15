@@ -10,7 +10,7 @@ import SwiftUI
 struct PickerUstensilTypeView: View {
     // to dismiss the picker
     @Binding var isPickerPresented : Bool
-    // to confirm that an ustensil type as been chosen
+    // to confirm that an ustensil type has been chosen
     // to change the visual of the button to go to this picker 
     // and to be able to add the ustensil to the list of ustensils
     @Binding var ustensilChosen : Bool
