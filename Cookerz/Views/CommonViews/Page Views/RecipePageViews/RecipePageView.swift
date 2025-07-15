@@ -42,6 +42,7 @@ struct RecipePageView: View {
                     
                     VStack(alignment: .leading, spacing: 10) {
                         // to let a space at the top before the rest to see the recipe image behind
+                        // with return button and favorite button
                         RecipePageTransparentFrontBGImage(recipe: recipe)
                         
                         
