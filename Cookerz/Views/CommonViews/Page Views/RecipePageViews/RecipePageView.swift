@@ -21,7 +21,7 @@ struct RecipePageView: View {
         return nil
     }
 
-    // var to change number of portions
+    // var to change page between the ingredient part and the steps part
     @State var selectedPart: RecipeEnum = .ingredients
     // var to change number of portions 
     // (the number PortionChosen is initialized with 1 to make it work 
