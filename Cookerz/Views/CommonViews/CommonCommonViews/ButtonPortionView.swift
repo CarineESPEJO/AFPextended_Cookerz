@@ -2,13 +2,13 @@
 //  PageButtonPortionView.swift
 //  Cookerz
 //
-//  Created by apprenant98 on 13/03/2025.
+//  Created by Carine ESPEJO on 13/03/2025.
 //
 
 import SwiftUI
 
 struct ButtonPortionView: View {
-    
+    // - or + 
     var textSymbol: String
     var body: some View {
         ZStack {
