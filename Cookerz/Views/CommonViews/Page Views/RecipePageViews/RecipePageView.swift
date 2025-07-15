@@ -58,11 +58,12 @@ struct RecipePageView: View {
                                 
                                 RecipeDoublePickerView(selectedPart: $selectedPart)
                                 
-                      
+                              // if ingredients part, it shows the ingredients and ustensils
                                 if selectedPart == .ingredients {
                                     PageStuffView( numberPortionChosen: $numberPortionChosen, numberPortionBase: recipe.portion, listIngredients : recipe.ingredients,
                                                    listUstensils : recipe.ustensils)
                                 }
+                                // else it shows the steps of the recipe
                                 else {
                                     RecipePageListSteps(listSteps : recipe.steps)
                                 }
@@ -81,7 +82,7 @@ struct RecipePageView: View {
 
                         
         }
-        // backbutton is hiddn because there is another one customed
+        // return button is hidden because there is another one customed
         .navigationBarBackButtonHidden(true)
         .ignoresSafeArea()
         // when page appear, numberPortionChosen takes portion chosen by creator as base
