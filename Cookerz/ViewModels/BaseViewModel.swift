@@ -209,6 +209,7 @@ class BaseViewModel: ObservableObject {
     
     // var to let the user to confirm the creation of the page only when it enter each fields : 
     //add an image, a name, a type, a duration, a difficulty and at least one ingredient and one step
+    // ustensils are not obligated thus there are not a condition
     var isFormComplete: Bool {
         return recipeImage != nil
         && !recipeTitle.isEmpty
