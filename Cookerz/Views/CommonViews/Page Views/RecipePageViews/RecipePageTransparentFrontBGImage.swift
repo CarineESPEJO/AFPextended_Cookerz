@@ -10,6 +10,7 @@ import SwiftUI
 struct RecipePageTransparentFrontBGImage: View {
     //it need to have the recipe for the var isFavorite
     var recipe : Recipe
+     //access the presentation mode of the current view(here used to dismiss from the nav and go back
     @EnvironmentObject var baseViewModel: BaseViewModel
     // var toggle of isLiked part of the recipe for the visual
     var isFavorite: Bool {
