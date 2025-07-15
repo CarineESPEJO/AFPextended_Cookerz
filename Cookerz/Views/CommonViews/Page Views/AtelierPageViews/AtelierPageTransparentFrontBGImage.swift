@@ -1,13 +1,14 @@
 //
-//  PageTransparentFrontBGImage.swift
+//  AtelierPageTransparentFrontBGImage.swift
 //  Cookerz
 //
-//  Created by apprenant98 on 14/03/2025.
+//  Created by Carine ESPEJO on 14/03/2025.
 //
 
 import SwiftUI
 
 struct AtelierPageTransparentFrontBGImage: View {
+     //access the presentation mode of the current view(here used to dismiss from the nav and go back
     @Environment(\.presentationMode) var presentationMode
     var body: some View {
         VStack {
@@ -16,6 +17,7 @@ struct AtelierPageTransparentFrontBGImage: View {
                 .frame(width: UIScreen.main.bounds.width, height: 20)
             HStack {
                 Button {
+                     //custom return button (the normal one is hidden in recipepageview)
                     presentationMode.wrappedValue.dismiss()
                 }label : {
                     HStack {
