@@ -24,7 +24,7 @@ struct PickerUstensilTypeView: View {
                     .foregroundStyle(Color.black)
                 Spacer()
                 Button {
-                    // to confirm that an ustensil type as been chosen
+                    // to confirm that an ustensil type has been chosen
                     ustensilChosen = true
                     // to dismiss the picker
                     isPickerPresented = false
