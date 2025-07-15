@@ -41,7 +41,7 @@ struct PickerUstensilTypeView: View {
                 Spacer()
                 //picker to choose the type of the ustensil to add to the list of ustensils
                 Picker("Type d'ustensile", selection: $ustensilType) {
-                    // a section for each element in UstensilType
+                    // a section for each element in UstensilType enum
                     ForEach(UstensilType.allCases, id: \.self) { ustensil in
                         HStack {
                             Image(ustensil.Icon)
