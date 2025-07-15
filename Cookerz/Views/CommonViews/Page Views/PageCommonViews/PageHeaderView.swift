@@ -2,13 +2,15 @@
 //  PageHeaderView.swift
 //  Cookerz
 //
-//  Created by apprenant98 on 10/03/2025.
+//  Created by Carine ESPEJO on 10/03/2025.
 //
 
 import SwiftUI
 
 struct PageHeaderView: View {
+    // name of the recipe or cooking class
     var elementTitle : String
+    // the creator, if issue finding them, there is a visual for it
     var recipeCreator : User?
     var body: some View {
         VStack (alignment: .leading) {
@@ -23,7 +25,7 @@ struct PageHeaderView: View {
             
             HStack {
                 HStack {
-               
+                   // if there is a creator, shows its profil image and name
                     if let creator = recipeCreator {
                         Image(creator.image)
                             .resizable()
@@ -32,9 +34,8 @@ struct PageHeaderView: View {
                             .clipShape(Circle())
                         Text(creator.name)
                             .font(.PoppinsSubhead())
-                        
+                   // else its shows remplacement elements
                     } else {
-                     
                         Image("UnknownProfil")
                             .resizable()
                             .scaledToFill()
