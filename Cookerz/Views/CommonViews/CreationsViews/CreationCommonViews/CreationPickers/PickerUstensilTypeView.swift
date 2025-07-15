@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct PickerUstensilTypeView: View {
+    // to dismiss the picker
     @Binding var isPickerPresented : Bool
+    // to confirm that an ustensil type as been chosen
+    // to change the visual of the button to go to this picker 
+    // and to be able to add the ustensil to the list of ustensils
     @Binding var ustensilChosen : Bool
-    
+    // var changed by picker
     @Binding var ustensilType: UstensilType
     
     var body: some View {
@@ -20,7 +24,9 @@ struct PickerUstensilTypeView: View {
                     .foregroundStyle(Color.black)
                 Spacer()
                 Button {
+                    // to confirm that an ustensil type as been chosen
                     ustensilChosen = true
+                    // to dismiss the picker
                     isPickerPresented = false
                 } label: {
                     Text("Valider")
@@ -33,7 +39,9 @@ struct PickerUstensilTypeView: View {
             
             HStack {
                 Spacer()
+                //picker to choose the type of the ustensil to add to the list of ustensils
                 Picker("Type d'ustensile", selection: $ustensilType) {
+                    // a section for each element in UstensilType
                     ForEach(UstensilType.allCases, id: \.self) { ustensil in
                         HStack {
                             Image(ustensil.Icon)
@@ -43,6 +51,7 @@ struct PickerUstensilTypeView: View {
                         }
                     }
                 }
+                // wheel style picker (ex: https://media.idownloadblog.com/wp-content/uploads/2022/10/iOS-wheel-style-time-picker.png)
                 .pickerStyle(.wheel)
             }
         }
