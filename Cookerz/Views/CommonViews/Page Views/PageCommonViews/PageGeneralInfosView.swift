@@ -2,13 +2,15 @@
 //  PageGeneralInfosView.swift
 //  Cookerz
 //
-//  Created by apprenant98 on 13/03/2025.
+//  Created by Carine ESPEJO on 13/03/2025.
 //
 
 import SwiftUI
 
 struct PageGeneralInfosView: View {
+    // icon of difficulty or likes
     var GeneralInfoIcon : String
+    // difficulty name or number of likes
     var GeneralInfoText : String
     var body: some View {
         VStack {
