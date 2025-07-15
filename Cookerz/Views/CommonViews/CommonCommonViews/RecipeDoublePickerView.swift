@@ -1,5 +1,5 @@
 //
-//  RecipeDoublePicker.swift
+//  RecipeDoublePickerView.swift
 //  Cookerz
 //
 //  Created by Carine ESPEJO on 14/03/2025.
