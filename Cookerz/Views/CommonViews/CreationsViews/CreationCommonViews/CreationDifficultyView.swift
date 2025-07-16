@@ -16,7 +16,9 @@ struct CreationDifficultyView: View {
     func toggleDifficulty() {
         switch elementDifficulty {
         // defaultdifficulty is for giving a visual to the button when it's not already clicked a 1st time
+        // and verify if button used a least one time before confirming the creation to avoid that the user forgot to choose a difficulty
         case .defaultdifficulty:
+            //when clicked it goes on easy 
             return elementDifficulty = .easy
         case .easy:
             return elementDifficulty = .medium
