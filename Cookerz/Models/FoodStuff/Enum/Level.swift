@@ -10,6 +10,7 @@ import Foundation
 // We choose to categorize the recipes into three difficulty levels.
 //To manage this cleanly and efficiently, we used an enum to associate each level with its corresponding visual elements, allowing for easier reuse throughout the app.
 enum Level {
+    //defaultdifficulty is for giving a visual to a button in the creation pages when it's not already clicked a 1st time
     case defaultdifficulty
     case easy
     case medium
