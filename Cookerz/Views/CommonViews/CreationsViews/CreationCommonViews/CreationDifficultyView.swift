@@ -9,10 +9,13 @@
 import SwiftUI
 
 struct CreationDifficultyView: View {
+    //call this var to change it with this button
     @Binding var elementDifficulty: Level
-    
+
+    //function for when the button is clicked, the value toggle
     func toggleDifficulty() {
         switch elementDifficulty {
+        // defaultdifficulty is for giving a visual to the button when it's not already clicked a 1st time
         case .defaultdifficulty:
             return elementDifficulty = .easy
         case .easy:
