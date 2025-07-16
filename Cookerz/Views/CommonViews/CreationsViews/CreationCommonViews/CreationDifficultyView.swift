@@ -10,6 +10,7 @@ import SwiftUI
 
 struct CreationDifficultyView: View {
     //call this var to change it with this button
+    // to put it in the recipe or cooking class which will be created
     @Binding var elementDifficulty: Level
 
     //function for when the button is clicked, the value toggle
