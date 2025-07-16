@@ -11,6 +11,7 @@ import Foundation
 //To manage this cleanly and efficiently, we used an enum to associate each level with its corresponding visual elements, allowing for easier reuse throughout the app.
 enum Level {
     //defaultdifficulty is for giving a visual to a button in the creation pages when it's not already clicked a 1st time
+    // and verify if button used a least one time before confirming the creation to avoid that the user forgot to choose a difficulty
     case defaultdifficulty
     case easy
     case medium
