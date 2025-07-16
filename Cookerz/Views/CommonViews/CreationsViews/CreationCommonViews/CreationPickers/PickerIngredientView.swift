@@ -57,7 +57,7 @@ struct PickerIngredientView: View {
                 .pickerStyle(.wheel)
                 
                 Spacer()
-                //picker to choose the ingredient
+                //picker to choose the ingredient to add to the list of ingredients
                 //(use ingredientType modified in the left wheel to group its ingredients in smaller categories instead of showing all of them at the same time)
                 // this picker change  the value of th ingredient we want to add 
                 Picker("Choix d'ingrédient", selection: $ingredient) {
