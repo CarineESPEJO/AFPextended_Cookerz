@@ -15,12 +15,13 @@ struct PageListIngredientsView: View {
     // Binding to change the number of portions
     @Binding var numberPortionChosen : Int
 
-    // function to transform the format into x.xx or x if x.00
+    // function to show the ingredient quantity with only 2 digits after the dot
+    // its because if by changing the number of portions, the quantity of the ingredients goes more than 2 digit aftyer the dot 
     func formatNumber(_ number: Double) -> String {
       
         let formattedNumber = String(format: "%.2f", number)
         
-     
+         //if the 2 digits after the dot are only zeros, it remove them 
         if formattedNumber.hasSuffix(".00") {
             return String(formattedNumber.prefix { $0 != "." })
         } else {
