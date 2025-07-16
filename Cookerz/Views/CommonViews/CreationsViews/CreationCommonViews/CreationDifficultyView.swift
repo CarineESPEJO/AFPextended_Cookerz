@@ -2,7 +2,7 @@
 //  CreationDifficultyView.swift
 //  Cookerz
 //
-//  Created by apprenant98 on 14/03/2025.
+//  Created by Carine ESPEJO on 14/03/2025.
 //
 
 
@@ -20,6 +20,7 @@ struct CreationDifficultyView: View {
         case .defaultdifficulty:
             //when clicked it goes on easy 
             return elementDifficulty = .easy
+        //then it toggles only between easy, medium and hard
         case .easy:
             return elementDifficulty = .medium
         case .medium:
@@ -34,6 +35,7 @@ struct CreationDifficultyView: View {
             toggleDifficulty()
         } label: {
             VStack {
+                // there is no Icon for defaultDifficulty so it use the same as easy
                 Image(elementDifficulty == .defaultdifficulty ? Level.easy.IconBlackWhite : elementDifficulty.IconBlackWhite)
                 
                 Text(elementDifficulty.name)
