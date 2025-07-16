@@ -2,14 +2,16 @@
 //  CreationGalleryImageView.swift
 //  Cookerz
 //
-//  Created by apprenant98 on 17/03/2025.
+//  Created by Carine ESPEJO on 17/03/2025.
 //
 
 
 import SwiftUI
-
+// view to show the same gallery as publication
 struct CreationGalleryImageView: View {
+    // var to close this view
     @Binding var isGalleryPresented: Bool
+    // var to retrieve the name of the chosen picture to put it in the recipe or cooking class which will be created
     @Binding var imageChosen: String?
     let columns = [
         GridItem(.flexible()),
