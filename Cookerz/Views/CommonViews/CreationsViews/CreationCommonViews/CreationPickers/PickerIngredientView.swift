@@ -42,6 +42,7 @@ struct PickerIngredientView: View {
             
             HStack {
                 //picker to choose the type of the ingredient
+                //this picker change  the value of ingredientType to use to filter the right wheel
                 Picker("Type d'ingredient", selection: $ingredientType) {
                     ForEach(IngredientType.allCases, id: \.self) { ingredient in
                         HStack {
@@ -57,6 +58,8 @@ struct PickerIngredientView: View {
                 
                 Spacer()
                 //picker to choose the ingredient
+                //(use ingredientType modified in the left wheel to group its ingredients in smaller categories instead of showing all of them at the same time)
+                // this picker change  the value of th ingredient we want to add 
                 Picker("Choix d'ingrédient", selection: $ingredient) {
                     // it's shows all the ingredients whose type is the one chosen in the left wheel
                     //It gives the effect that we go into an type ingredient group where there are the ingredients of this type group
