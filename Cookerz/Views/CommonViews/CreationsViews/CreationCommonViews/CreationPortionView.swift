@@ -1,22 +1,25 @@
 //
-//  PortionsView.swift
+//  CreationPortionView.swift
 //  Cookerz
 //
-//  Created by apprenant98 on 13/03/2025.
+//  Created by Carine ESPEJO on 13/03/2025.
 //
 
 import SwiftUI
 
+// view to reduce or increase the number of portion
 struct CreationPortionsView: View {
     @Binding var numberPortionChosen : Int
     var body: some View {
         HStack {
+            // if it's 0, it can't go lower
             Button {
                 if numberPortionChosen > 0 {
                     numberPortionChosen -= 1
                 }
                 
             }label : {
+                // if it's 0, the button doesn't appear
                 if numberPortionChosen > 0 {
                     ButtonPortionView(textSymbol :"-")}
             }
