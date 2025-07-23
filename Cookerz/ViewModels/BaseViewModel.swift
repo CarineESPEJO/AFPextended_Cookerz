@@ -180,7 +180,7 @@ class BaseViewModel: ObservableObject {
 
     // variables needed to create a recipe
     @Published var recipeTitle: String = ""
-    // it can be null because there is no value before we enter a name for the recipe.
+    // it can be null because there is no value before the user choose a picture for the recipe.
     @Published var recipeImage: String? = nil
     // a recipe can be in several categories (ex: asiatic and vegan)
     @Published var selectedRecipeTypes: [RecipeType] = []
@@ -198,12 +198,12 @@ class BaseViewModel: ObservableObject {
     @Published var newIngredientQuantity: String = ""
     @Published var newIngredientUnit: IngredientUnit = .gramme
 
-    // same the recipe ustensils list
+    // same with  the recipe ustensils list
     @Published var listUstensils: [Ustensil] = []
     @Published var newUstensilType: UstensilType = .cookerMachine
     @Published var newUstensilName: String = ""
 
-    // same the recipe steps list
+    // same with the recipe steps list
     @Published var listSteps: [String] = []
     @Published var newStep: String = ""
     
