@@ -1,3 +1,9 @@
+////
+////  Untitled.swift
+////  Cookerz
+////
+////  Created by Carine ESPEJO on 14/03/2025.
+////
 //
 //
 //import SwiftUI
@@ -506,7 +512,7 @@
 //                    Text("Ajouter une étape")
 //                        .foregroundColor(.black)
 //                        .font(.subheadline)
-//                        .padding([.top, .leading], 14) // Décalage pour éviter que le texte de placeholder ne se superpose avec le texte entré
+//                        .padding([.top, .leading], 14) // Offset to prevent the placeholder text from overlapping with the entered text
 //                }
 //            }
 //            .frame(width: .infinity, height: 150)
