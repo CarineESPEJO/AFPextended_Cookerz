@@ -2,12 +2,12 @@
 //  RecipeCreationTimeView.swift
 //  Cookerz
 //
-//  Created by apprenant98 on 14/03/2025.
+//  Created by Carine ESPEJO on 14/03/2025.
 //
 
 
 import SwiftUI
-
+//visual of the time button
 struct RecipeCreationTimeView: View {
     @Binding var recipeTimeHours: Int
     @Binding var recipeTimeMinutes: Int
