@@ -167,7 +167,7 @@ class BaseViewModel: ObservableObject {
         totalPointsGained - totalPointsUsed
     }
 
-    // Here my the modelview for my part we had to put in there
+    // Here the creation recipe part I made that we had to put in there
     // Someone else was chosen to take care of the model view part. However, instead of creating several model views, they only made one.
     // Linking between certain parts of the back-end code was difficult due to that, and we had to adapt as much as we could at the end to make it work. 
     // Thus, the back-end of recipe creation is located in the model view, but the one of the live creation is on a separate page.
