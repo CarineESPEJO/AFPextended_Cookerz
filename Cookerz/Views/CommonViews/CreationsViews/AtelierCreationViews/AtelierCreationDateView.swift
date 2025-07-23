@@ -2,13 +2,14 @@
 //  AtelierCreationDateView.swift
 //  Cookerz
 //
-//  Created by apprenant98 on 14/03/2025.
+//  Created by Carine ESPEJO on 14/03/2025.
 //
 
 
 import SwiftUI
-
+// visual part of the button date to open datepicker
 struct AtelierCreationDateView: View {
+    // used when the user has not already chosen the date.
     var atelierDateChosen : Bool
     var atelierDate: String
     
