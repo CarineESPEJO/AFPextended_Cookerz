@@ -2,7 +2,7 @@
 ////  Untitled.swift
 ////  Cookerz
 ////
-////  Created by apprenant98 on 14/03/2025.
+////  Created by Carine ESPEJO on 14/03/2025.
 ////
 //
 //import SwiftUI
@@ -43,7 +43,7 @@
 //    
 //    @State var selectedPart: RecipeEnum = .ingredients
 //    
-//    // Declare a separate regular property instead of a computed one
+//    
 //    private var isFormComplete: Bool {
 //        return recipeImage != nil
 //            && !recipeTitle.isEmpty
