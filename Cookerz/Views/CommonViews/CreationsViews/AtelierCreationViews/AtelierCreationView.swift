@@ -16,7 +16,7 @@ struct AtelierCreationView: View {
     // call the view model linked to the cooking class creation view
     @StateObject private var creationViewModel = AtelierCreationViewModel()
 
-    // to call the diffferent pickers to choose the elements to create the cooking class (date, ingredients and their unit, ustensil type)
+    // to call the diffferent pickers to choose the elements to create the cooking class (date, ingredients and their unit, ustensil type,...)
     @State private var isDatePickerPresented = false
     @State private var isIngredientPickerPresented = false
     @State private var isIngredientUnitPickerPresented = false
